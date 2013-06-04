@@ -1,0 +1,1 @@
+This is the personal portfolio of Tom Kroon. If you would like to get in touch with me for work or just to chat, email me at tomofkroon@gmail.com.
