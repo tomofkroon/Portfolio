@@ -1,46 +1,192 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Tom Kroon | Portfolio</title>
-  <meta name="description" content="The Website Porfolio of Thomas Kroon">
-  <meta name="author" content="Tom Kroon">
-  <link rel="stylesheet" href="css/styles.css">
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+	<meta charset="utf-8">
+	<title>Tom Kroon | Portfolio</title>
+	<meta name="description" content="Website Porfolio of Front End Web Developer Thomas Kroon">
+	<meta name="author" content="Tom Kroon">
+	<!--Google Plus Meta Tags -->
+	<link rel=”author” href=”https://plus.google.com/112282332649178445036“/>
+	<!--Facebook Open Graph Meta Tags -->
+	<meta property=”og:title” content=”Tom Kroon's Web Developer Portfolio”/>
+	<meta property=”og:type” content=”website”/>
+	<meta property=”og:image” content=”http://www.tallpaleandgeeky.com/tom_kroon.jpg”/>
+	<meta property=”og:description” content=”Hey everybody! My name's Tom Kroon, and I create awesome websites. Come check out my portfolio for a list of all my past work.”/>
+	<!--Twitter Card Meta Tags -->
+	<meta name=”twitter:card” content=”summary”>
+	<meta name=”twitter:url” content=”http://tallpaleandgeeky.com/”>
+	<meta name=”twitter:title” content=”Tom Kroon: Front-End Web Developer”>
+	<meta name=”twitter:description” content=”Check out what Tom's been up to in his latest web developer adventures. Be sure to contact Tom if you have a job for him.”>
+	<meta name=”twitter:image” content=”http://www.tallpaleandgeeky.com/tom_kroon.jpg”>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" media="screen and (min-width: 880px)" href="css/widescreen_styles.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		//quick links to content sections
+	   $('#link_1').localScroll({duration:800});
+	   $('#link_2').localScroll({duration:1600});
+	   $('#link_3').localScroll({duration:2000});
+	});
+	</script>
+	<!--[if lt IE 9]> 
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+	<![endif]-->
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+	<![endif]-->
 </head>
 <body>
-<header>
-	<h1>Tom Kroon</h1>
-	<h2>Front-End Web Developer</h2>
-	<nav>
+<header id="main_header">
+	<div id="linktotop"></div>
+	<h1 id="header_name"><a href="">Tom Kroon</a>&mdash;Front-End Web Developer</h1>
+	<nav id="main_menu">
 		<ul>
-			<li>Work</li>
-			<li>About</li>
-			<li>Contact</li>
+			<li id="link_1"><a href="#work">Work</a></li>
+			<li id="link_2"><a href="#about">About</a></li> 
+			<li id="link_3"><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 </header>
-<section id="personal_branding">
-<p>Hi there, I'm Tom Kroon.</p>
-</section>
-<section id="work">
-	<article class="past_project">
-	Project #1
-	</article>
-</section>
-<footer>
-<img src="" alt="" />
-<p>Tom Kroon is a front-end web developer living in Edmonds, WA. <a href="">Read more about me</a></p>
-<div id="copyright">2013 Tom Kroon</div>
-<ul id="social_media_links">
-	<li>Facebook</li>
-	<li>LinkedIn</li>
-	<li>Instagram</li>
-	<li>Twitter</li>
-</ul>
-<a href="">tom@tallpaleandgeeky.com</a>
+<div id="main_body">
+	<section id="personal_branding">
+		<p>Hi, I'm Tom Kroon. I'm a <strong class="highlight">front-end web developer</strong> who's worked in the web industry for 4 years &amp; currently living in Seattle, WA.</p>
+	</section> 
+	<section id="work">
+		<h1>Work</h1>
+		<article class="past_project">
+			<h2>Epic Floors</h2>
+			<img class="project_preview" src="epicfloors_home.png" alt="" />
+			<div class="project_summary">
+				<h3><a href="http://epicconcretefloors.com/dev1/">epicconcretefloors.com</a></h3>
+				<h4>Role: Web Design, Web Development</h4>
+				<p>This was the first contractor website that I was asked to design and build. The goal was to create an aesthetic that matched the company’s logo, and make it as easy as possible for users to find pertinent information about the business.</p>
+			</div>
+		</article>
+		<article class="past_project">
+			<h2>North Sound Service</h2>
+			<img class="project_preview" src="northsoundservice_about.png" alt="" />
+			<div class="project_summary">
+				<h3><a href="http://northsoundservice.com/v2/">northsoundservice.com</a></h3>
+				<h4>Role: Web Design, Web Development</h4>
+				<p>I was asked by a local landscaping company to redesign their website, and incorporate imagery from their print flyers and other marketing materials. The design is minimal, focusing on images of their past work.</p>
+				<p>The website is still under development, but a preview is available to view online.</p>
+			</div>
+		</article>
+		<article class="past_project">
+			<h2>Sunshine's All Naturals</h2>
+			<img class="project_preview" src="sunshine_catering.png" alt="" />
+			<div class="project_summary">
+				<h3 id="deleted"><a>sunshinesallnaturals.com</a></h3>
+				<h4>Role: Web Design, Web Development</h4>
+				<p>I was approached by small, sustainable meal catering/delivery service to redesign their entire online website and ordering system. The website was designed to highlight their various food products and streamline the shopping experience with a custom, user-friendly shopping cart system.</p>
+				<p>The site I designed is no longer available online because the maintenance on a custom shopping cart was too much for a small business to manage. C’est la vie.
+</p>
+			</div>
+		</article>
+		<article class="past_project">
+			<h2>Lauren's Gemstone Jewelry</h2>
+			<img class="project_preview" src="laurensgemstonejewelry_home.png" alt="" />
+			<div class="project_summary">
+				<h3><a href="http://laurensgemstonejewelry.com/">laurensgemstonejewelry.com</a></h3>
+				<h4>Role: Web Design, Web Development</h4>
+				<p>A local jewelry maker approached me looking to create an online shop for her business. I designed the website from scratch, using PHP and MySQL to create a simple CMS for the owner to add/update/delete products.</p>
+				<p>To simplify the shopping experience, I utilized PayPal for the shopping cart and payment system.</p>
+			</div>
+		</article>
+		<article class="past_project">
+			<h2>Peak Missoula</h2>
+			<img class="project_preview" src="peakmissoula_home.png" alt="" />
+			<div class="project_summary">
+				<h3><a href="http://peakmissoula.com/">peakmissoula.com</a></h3>
+				<h4>Role: Web Development, Information Architecture Consulting</h4>
+				<p>I was asked to restructure the content on the Peak Missoula website, giving all three of their locations equal representation on one website.</p>
+				<p>After performing a content audit on the current website, I proposed an updated information architecture that was approved by their management. This is still an ongoing project, and the proposed information architecture will be implemented sometime in the near future.</p>
+			</div>
+		</article>
+		<article class="past_project">
+			<h2>Doctors Express NW</h2>
+			<img class="project_preview" src="doctorsexpress_ad.png" alt="" />
+			<div class="project_summary">
+				<h3><a href="http://doctorsexpresswa.com/">doctorsexpresswa.com</a></h3>
+				<h4>Role: Social Media Managment, PPC Campaign Management</h4> 
+				<p>I managed the Facebook advertising campaigns for Doctors Express Kent, Queen Anne and Everett that lasted for several months and was successful at growing their number of Facebook fans and driving clients to their different walk-in clinics.</p>
+			</div> 
+		</article>
+		<article class="past_project">
+			<h2>Museum of Modern Art</h2>
+			<img class="project_preview" src="museumofnwart_form.png" alt="" />
+			<div class="project_summary">
+				<h3><a href="http://museumofnwart.org/auction/form/">mona.com</a></h3>
+				<h4>Role: Web Design, Web Development</h4>
+				<p>A local art museum asked me to create an artwork submission form for their annual art auction.</p>
+			</div>
+		</article>
+		<article class="past_project">
+			<h2>OblongPixel</h2>
+			<img class="project_preview" src="pixelblog_post.png" alt="" />
+			<div class="project_summary">
+				<h3><a href="http://oblongpixel.com/pixelblog/">oblongpixel.com/pixelblog</a></h3>
+				<h4>Role: Content Production</h4>
+				<p>I’ve written several blog posts for my company, OblongPixel. All of my posts are geared towards web developers working on small business websites, but I try to make them accessible enough so all types of website owners will get some use out of reading them.</p>
+			</div>
+		</article> 
+	</section>
+	
+	
+	<a class="top_link" href="#linktotop">Back To Top</a>
+	<section id="about">
+		<h1>About</h1> 
+		<p id="about_selling_point">I’m a creative, passionate, detail-obsessed <strong class="highlight darken">front-end web developer</strong> looking to make the web a more user-friendly place one website at a time. I love the direction the web is going with new standards & technologies like HTML5, CSS3, jQuery and RESTful API’s. With all these new toys to play with, I’ve made it my obsession to figure out how I can make it easier for people to explore, create and share on the web.</p>
+		<img src="tom_kroon.jpg" alt="" />
+		<p>When I’m not obsessing about web culture or working on a project, I’m usually playing board games, home brewing or <a href="http://www.americanbrewing.com/">having a beer</a> with friends and talking about the latest comic book movies. I’ve lived in Seattle, WA my entire life, graduated from the University of Washington and worked for a time at the <a href="http://www.seattlepi.com/">SeattlePI.com</a>. I would have moved by now, but Seattle is such an awesome town that I haven’t come up with a good enough reason to go anywhere else!</p>
+		<p>I'm a front-end web developer at heart, but I've also worked as a SEO consultant, social media manager, content auditor and PPC campaign manager in the past.</p>
+		<p>I'm good at HTML, CSS, jQuery, PHP, MySQL, UX design and SEO</p>
+		<p>I'm learning about graphic design, JSON, mobile web design and SEM</p>
+	</section>
+	<a class="top_link" href="#linktotop">Back To Top</a>
+	<section id="contact">
+		<h1>Contact</h1>
+		<p>Want to chat about how awesome Iron Man 3 was? Or if you want to talk about something web-related, I'm OK with that too. If you're looking for a front-end web developer, I am available for hire.</p>
+		<ul>
+			<li>Phone: 206.794.2131</li>
+			<li>Email: <a href="mailto:tom@tallpaleandgeeky.com">tom@tallpaleandgeeky.com</a></li>
+			<li>Resume: <a href="Tom-Kroon-Resume.pdf">Download my resume</a></li>
+			<li>Facebook: <a href="https://www.facebook.com/tomofkroon">facebook.com/tomofkroon</a></li>
+		</ul>
+	</section>
+	<a class="top_link" href="#linktotop">Back To Top</a>
+</div>
+<footer id="main_footer">
+	<div id="footer_bio">
+		<p>Tom Kroon is a front-end web developer living in Edmonds, WA. <a href="#about">Read more about me</a></p>
+	</div>
+	<div id="footer_menu">
+		<small id="copyright">&copy; 2013 Tom Kroon &mdash;<a href="mailto:tom@tallpaleandgeeky.com">tom@tallpaleandgeeky.com</a>
+</small>
+		<ul id="social_media_links">
+			<li><a href="https://www.facebook.com/tomofkroon"><img src="facebook.gif" alt="Facebook Link" /></a></li>
+			<li><a href="http://www.linkedin.com/pub/thomas-kroon/12/72a/67b"><img src="linkedin.gif" alt="LinkedIn Link" /></a></li>
+			<li><a href="http://instagram.com/tomofkroon"><img src="instagram.gif" alt="Instagram Link" /></a></li>
+			<li><a href="https://twitter.com/tomofkroon"><img src="twitter.gif" alt="Twitter Link" /></a></li>
+		</ul>
+	</div>
 </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-41328483-1', 'tallpaleandgeeky.com');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

@@ -1,0 +1,135 @@
+body{
+	font-size: 1.25em;
+}
+
+/******HEADER STYLES******/
+
+#main_header h1#header_name{
+	width: 50%;
+	text-align: left;
+}
+h1#header_name a{
+	display: inline;
+}
+#main_header #main_menu{
+	width: 50%;
+	text-align: left;
+}
+#main_menu ul{
+	text-align: right;
+	padding-top: 0;
+}
+
+
+
+/******MAIN BODY******/
+
+section#personal_branding{
+	background-color: rgb(0, 197, 174);
+	font-family: 'SourceSansProExtraLight', sans-serif;
+	font-size: 3em;
+}
+#personal_branding p{
+	line-height: 1em;
+}
+section h1{
+	font-size: 5em;
+	padding: .75em 0 0;
+	line-height: 1em;
+}
+article.past_project{
+	width: 100%;
+	float: left;
+	padding: 2em 0;
+}
+.past_project:first-of-type{
+	padding-top: 1em;
+}
+.past_project h2{
+	width: 50%;
+	margin-right: 50%;
+}
+img.project_preview{
+	max-width: 45%;
+	float: right;
+	display: inline;
+}
+.project_summary{
+	max-width: 50%;
+}
+.project_summary p{
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+#about p#about_selling_point{
+	font-size: 1.5em;
+	width: 100%;
+	float: left;
+	line-height: 1.4em;
+}
+#about img{
+	width: 40%;
+	max-width: 450px;
+	margin: 0;
+	float: left;
+	display: inline;
+}
+#about p{
+	width: 58%;
+	float: right;
+	display: inline
+}
+section#contact{
+	padding-bottom: 2em;
+}
+#contact #contact_info{
+	width: 50%;
+	float: right;
+}
+#contact h2{
+	text-align: left;
+	font-family: 'MerriweatherLight', serif;
+	padding: .5em 0;
+}
+
+/*******FOOTER STYLES******/
+
+footer#main_footer{
+	padding-bottom: 0.75em;
+}
+#footer_bio img{
+	width: 20%;
+	max-width: 100px;
+	float: left;
+	display: inline;
+	padding-bottom: 0;
+}
+#footer_bio p{
+	display: block;
+	padding: 2em 0 0;
+}
+#footer_menu small#copyright{
+	width: 65%;
+	display: inline;
+	float: left;
+	padding-bottom: 0;
+	padding-top: 1em;
+}
+#footer_menu ul{
+	width: 35%;
+	display: inline;
+	float: right;
+	padding: 0;
+	text-align: right;
+}
+#footer_menu li{
+	display: inline;
+}
+
+/******MEDIA QUERIES******/
+@media only screen and (max-width: 1025px){
+	h1#header_name a{
+		display: block;
+	}
+}

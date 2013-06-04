@@ -1,0 +1,19 @@
+img.project_preview{
+	float: right;
+	padding: 0 0 1em;
+	width: 45%;
+	display: inline;
+}
+.project_summary{
+	width: 52%;
+	float: left;
+}
+#about img{
+	width: 215px;
+	float: left;
+}
+#about p{
+	float: right;
+	display: inline;
+	padding: 1em 0 0;
+}
